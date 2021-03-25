@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="iOS_Tech_Task" customModuleProvider="target">
+            <connections>
+                <outlet property="adressLabel" destination="bMn-eo-sdq" id="QhA-bS-7jI"/>
+                <outlet property="nameLabel" destination="7im-Ej-lQg" id="dI9-fv-ks6"/>
+                <outlet property="tableView" destination="bWG-wi-lH8" id="bU3-Oe-L3Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7im-Ej-lQg">
+                    <rect key="frame" x="30" y="74" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMn-eo-sdq">
+                    <rect key="frame" x="30" y="107" width="53" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-wi-lH8">
+                    <rect key="frame" x="30" y="177.5" width="354" height="654.5"/>
+                    <inset key="separatorInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-nW-526">
+                    <rect key="frame" x="30" y="151.5" width="92" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="eyk-nW-526" firstAttribute="top" secondItem="bMn-eo-sdq" secondAttribute="bottom" constant="24" id="141-wi-vOU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWG-wi-lH8" secondAttribute="trailing" constant="30" id="9CV-H7-jiH"/>
+                <constraint firstItem="bWG-wi-lH8" firstAttribute="top" secondItem="eyk-nW-526" secondAttribute="bottom" constant="5" id="AHs-ru-qlV"/>
+                <constraint firstItem="bMn-eo-sdq" firstAttribute="top" secondItem="7im-Ej-lQg" secondAttribute="bottom" constant="12" id="DTT-t5-tUv"/>
+                <constraint firstItem="eyk-nW-526" firstAttribute="leading" secondItem="bMn-eo-sdq" secondAttribute="leading" id="F2F-Ih-aOE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bWG-wi-lH8" secondAttribute="bottom" constant="30" id="F5c-Ee-zHD"/>
+                <constraint firstItem="7im-Ej-lQg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="LNX-jp-Rwc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bMn-eo-sdq" secondAttribute="trailing" constant="60" id="Ndc-I1-Rtu"/>
+                <constraint firstItem="bWG-wi-lH8" firstAttribute="leading" secondItem="bMn-eo-sdq" secondAttribute="leading" id="aTO-3E-JFm"/>
+                <constraint firstItem="7im-Ej-lQg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="btr-tn-JLR"/>
+                <constraint firstItem="bMn-eo-sdq" firstAttribute="leading" secondItem="7im-Ej-lQg" secondAttribute="leading" id="gaa-3F-Wrd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="651" y="140"/>
+        </view>
+    </objects>
+</document>
